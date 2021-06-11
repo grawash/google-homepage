@@ -22,6 +22,8 @@
                 padding:15px 0px;
             }
             ul{
+                display: flex;
+                align-items: center;
                 list-style-type: none;
                 padding:0;
                 margin:0;
@@ -30,15 +32,16 @@
             }
             #rightnav{
                 margin-left:auto;
-                padding-right:15px;
+                padding-right: 15px;
             
             }
+            
             li{
                 display:inline-block;
             }
             #googlemain{
                 display:flex;
-                margin: 89px 0;
+                margin: 120px 0;
                 flex-direction:column;
             }
             #googleimage{
@@ -53,7 +56,7 @@
                 border:1px solid #dfe1e5;
                 border-radius:24px;
                 height: 44px;
-                margin: 0px 632px;
+                margin: 15px 632px;
                 width:582px;
             }
             #searchtools{
@@ -80,7 +83,50 @@
                 line-height: 28px;
                 background:#4285f4;
             }
-            
+            #searchsubmit{
+                display:block;
+                text-align: -webkit-center;
+            }
+            #voicesearch{
+                padding: 0px 8px;
+                width:24px;
+                height: 24px;
+            }
+            input[type="submit"] {
+            background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            border-radius: 4px;
+            color: #5F6368;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+            }
+            #fotbar{
+                font-size: 10pt;
+                display:flex;
+                background:#f2f2f2;
+                line-height: 40px;
+                border-top: 1px solid #e4e4e4;
+                position:fixed;
+                bottom: 0;
+                height:35px;
+                width: 100%;
+            }
+            #leftfot{
+                margin-left: 30px;
+            }
+            #rightfot{
+                margin-right: 30px;
+                margin-left:auto;
+            }
         </style>
     </head>
     <body>
@@ -92,7 +138,7 @@
             <ul id="rightnav">
                 <li><a href="">Gmail</a></li>
                 <li><a href="">Images</a></li>
-                <li><a href=""><img src="https://fonts.gstatic.com/s/i/materialiconsoutlined/apps/v11/24px.svg"></a></li>
+                <li><a href=""><img style="opacity: 0.55; height: 30px; width: 30px;" src="https://fonts.gstatic.com/s/i/materialiconsoutlined/apps/v11/24px.svg"></a></li>
                 <li><a href=""><button id="login">sign in</button></a></li>
             </ul>
         </div>
@@ -104,9 +150,25 @@
                     <form>
                     <input id="searchtext" type="text">
                     </form>
-                    <img src="https://web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png">
+                    <img id="voicesearch" src="https://web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png">
                 </div>
             </div>
+            <div id=searchsubmit>
+                <input type="submit" value="Google Search">
+                <input type="submit" value="I'm Feeling Lucky">
+            </div>
+        </div>
+        <div id="fotbar">
+        <ul id=leftfot>
+            <li><a href="">Advertising</a></li>
+            <li><a href="">Business</a></li>
+            <li><a href="">How Search Works</a></li>
+        </ul>
+        <ul id=rightfot>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Settings</a></li>
+        </ul>
         </div>
     </body>
 </html>
