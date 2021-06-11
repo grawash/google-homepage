@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google</title>
+        <style>
+            body{
+                font-family: arial, sans-serif;
+            }
+            a{
+                color:#000;
+                text-decoration:none;
+                padding-left:15px;
+            }
+            a:hover{
+                text-decoration: underline;
+
+            }
+            #navbar{
+                display:flex;
+                flex-direction: row;
+                font-size:13px;
+                padding:15px 0px;
+            }
+            ul{
+                list-style-type: none;
+                padding:0;
+                margin:0;
+                color #000;
+                opacity: 0.75;
+            }
+            #rightnav{
+                margin-left:auto;
+                padding-right:15px;
+            
+            }
+            li{
+                display:inline-block;
+            }
+            #googlemain{
+                display:flex;
+                margin: 89px 0;
+                flex-direction:column;
+            }
+            #googleimage{
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #searchbar{
+                display:flex;
+                /*position:absolute;*/
+                top:311px;
+                border:1px solid #dfe1e5;
+                border-radius:24px;
+                height: 44px;
+                margin: 0px 632px;
+                width:582px;
+            }
+            #searchtools{
+                display:flex;
+                align-items: center;
+                padding: 5px 8px 0 16px;
+                padding-left:14px;
+            }
+            #searchtext{
+                border:none;
+                display:flex;
+                height: 34px;
+                width: 487px;
+                outline: none;
+            }
+            #searchlogo{
+                display:flex;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="navbar">
+            <ul id="leftnav">
+                <li><a href="">About</a></li>
+                <li><a href="">Strore</a></li>
+            </ul>
+            <ul id="rightnav">
+                <li><a href="">Gmail</a></li>
+                <li><a href="">Images</a></li>
+                <li><a href=""></a><img src="https://fonts.gstatic.com/s/i/materialiconsoutlined/apps/v11/24px.svg"></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+        <div id="googlemain">
+            <img id="googleimage" alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            <div  id="searchbar">
+                <div id="searchtools">
+                    <img id="searchlogo" src="https://fonts.gstatic.com/s/i/materialiconsoutlined/search/v15/24px.svg">
+                    <form>
+                    <input id="searchtext" type="text">
+                    </form>
+                    <img src="https://web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
